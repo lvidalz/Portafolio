@@ -1,0 +1,145 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.padre{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+    .cabecera{
+        display: flex;
+        align-items: stretch;
+        align-items: center;
+        background: #ce3042;
+        height: 40px;
+    }
+        .informacion{
+            display: flex;
+            flex-grow: 15;
+            margin: 10px;
+            height: auto;
+        }
+            .telefono{
+                margin: 15px;
+                font-size: 12px;
+            }
+                .telefono a{
+                    color: #f6f6f6;
+                    text-decoration: none;
+                }
+            .correo{
+                margin: 15px;
+                font-size: 12px;
+            }
+                .correo a{
+                    color: #f6f6f6;
+                    text-decoration: none;
+                }
+                .correo a:hover{
+                    color: black;
+                    transition: all 0.8s;
+                }
+        .social{
+            display: flex;
+            flex-grow: 1;
+            margin: 10px;
+            height: auto;
+        }
+            .iconos{
+                margin: 15px;
+            }
+@media all and (max-width:600px){
+        .cabecera{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+                    }
+        .telefono,.correo{
+            font-size: 10px;
+        }
+}
+
+    .navegacion{
+        display: flex;
+        align-items: stretch;
+        align-items: center; 
+        background: #f6f6f6;
+        height: 200px;
+    }
+    .imagen{
+        flex-grow: 15;
+        margin-left: 60px;
+    }
+    .navegacion{
+        flex-grow: 1;
+    }
+    .navegacion ul{
+        margin-right: 60px;
+    }
+    .navegacion ul li{
+        padding: 20px;
+    }
+    .navegacion ul li{
+        display: inline-block;
+    }
+    .navegacion ul li a{
+        text-decoration: none;
+        letter-spacing: 2px;
+        color: #17202A;
+        font-size: 18px;
+    }
+    .navegacion ul li a:hover{
+        text-decoration: none;
+        color: #ce3042;
+        transition: all 0.6s;
+    }
+@media all and (max-width:1000px){
+        .menu{
+            display: none;
+        }
+        .imagen a img{
+            width: 200px;
+            height: 100px;
+        }
+}
+
+.container {
+    display: none;
+    cursor: pointer;
+    margin-right: 60px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+@media all and (max-width:1000px){
+    .container{
+        display: inline-block;
+    }
+
+}
+
